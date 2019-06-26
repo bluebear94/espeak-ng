@@ -1,0 +1,137 @@
+_a	A:
+_i	i:
+_o	o:
+_e	e:
+_u	u:
+t	tEs
+k	kEt
+x	Sal
+s	sOl
+n	nIm
+v	vIn
+f	fOS
+m	mIr
+d	dur
+g	gat
+p	par
+b	bel
+h	haR
+y	jun
+c	Ruk
+r	rus
+z	zOm
+j	ZOk
+w	wIt
+l	lES
+
+_0	'ju:
+_1	'kO
+_2	'ta
+_3	'vI
+_4	'val
+_5	'lIn
+_6	'kIs
+_7	'nOl
+_8	'tEn
+_9	'lOs
+_1X	On
+_2X	taOn
+_3X	vIOn
+_4X	valOn
+_5X	lInOn
+_6X	kIsOn
+_7X	nOlOn
+_8X	tEnOn
+_9X	lOsOn
+_0C	gal
+
+_0M0	kOt
+_1M0	kOt
+_0M1	sEn
+_1M1	sEn
+_0M2	vIks
+_1M2	vIks
+_0M3	avEm
+_1M3	avEm
+
+_dpt	Int $u
+
+_cap	klandI
+
+_#9	nIs
+_#32	mIut
+_!	tEmpEra
+_"	nOrm
+_$	sOlthaR
+_%	Oksgal
+_'	sElEt
+_[	OsnarvIZ
+_]	hEtarvIZ
+_(	OsNkErt
+_)	hEtkErt
+_*	sOwaka
+_,	tsuNk
+_-	sErEI
+_.	gaIn
+_:	alOt
+_;	galOn
+_<	kalt
+_>	nOd
+_=	kOk
+_?	ku:nO
+_@	kA:pa
+__	mOrEn
+_{	OsnmA:m
+_}	hEtmA:m
+_|	hasrEIn
+
+#	stEnt $max3
+@	ka $max3
+*	sOwaka $max3
+/	kIlp $max3
+\	alkIlp $max3
+%	Oksgal $max3
+=	kOk $max3
++	fOk $max3
+
+// words to avoid stressing
+
+// conjunctions & prepositions
+o	$u+
+ont	$u+
+az	$u+
+ul	$u+
+ol	$u+ $pause
+e	$u+
+a	$u+
+al	$u+
+i	$u+
+it	$u+
+ok	$u+
+kon	$u+
+vit	$u+
+xed	$u+
+ka	$u+
+im	$u+
+lana	$u1+
+tel	$u+
+fol	$u+
+du	$u+
+le	$u
+
+// some particles
+en	$u
+re	$u
+ren	$u
+den	$u
+te	$u
+
+// some verbs
+en	$u
+de	$u
+at	$u
+det	$u
+ik	$u
+or	$u
+es	$u
+and	$u

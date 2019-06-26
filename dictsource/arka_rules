@@ -1,0 +1,125 @@
+.group a
+  a a
+  aa 'A:
+
+.group e
+  e E
+  ee 'e:
+
+.group i
+  i I
+  ii 'i:
+
+.group o
+  o O
+  oo 'o:
+
+.group u
+  u u
+  uu 'u:
+
+.group q
+  q @
+  qq '@:
+
+.group t
+  t t
+  tt t:
+  tx tS
+  ts ts
+
+.group k
+  k k
+  kk k:
+
+.group x
+  x S
+  xx x:
+
+.group s
+  s s
+  ss s:
+
+.group n
+  n n
+  nn n:
+  n (k N
+  n (g N
+  n (p m
+  n (b m
+  n (f m
+  n (v m
+  n (s n^
+  n (z n^
+  n (x n^
+  n (j n^
+  n (r n^
+
+.group v
+  v v
+  vv v:
+
+.group f
+  f f
+  ff f:
+
+.group m
+  m m
+  mm m:
+
+.group d
+  d d
+  dd d:
+
+.group g
+  g g
+  gg g:
+
+.group p
+  p p
+  pp p:
+
+.group b
+  b b
+  bb b:
+
+.group h
+  h h
+  hh h:
+
+.group y
+  y j
+
+.group c
+  c R
+
+.group r
+  r r
+
+.group z
+  z z
+  zz z:
+
+.group j
+  j Z
+  jj Z:
+
+.group w
+  w w
+
+.group l
+  l l
+  ll l:
+
+.group
+  __) - (_D tIs
+  . gaIn
+  . (.       _:
+  \.) . 
+        !          _:tEmpEra:
+        ! (\! 
+        :          alOt
+    D_) : (_DD_              // omit colon in time, eg: 2:30
+        !=         ko:t
+        >=         alnOd
+        <=         alkalt

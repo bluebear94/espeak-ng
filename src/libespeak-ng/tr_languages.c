@@ -517,6 +517,18 @@ Translator *SelectTranslator(const char *name)
 		tr->encoding = ESPEAKNG_ENCODING_ISO_8859_6;
 		SetArabicLetters(tr);
 		break;
+	case ('a' << 24) + ('r' << 16) + ('k' << 8) + ('a'): // Arka
+	{
+		tr->langopts.stress_rule = STRESSPOSN_2R;
+		tr->langopts.stress_flags = S_FINAL_SPANISH | S_FINAL_DIM_ONLY | S_FINAL_NO_2;
+		tr->langopts.numbers = NUM_OMIT_1_HUNDRED | NUM_OMIT_1_THOUSAND;
+		tr->langopts.numbers2 = NUM2_MYRIADS;
+		tr->langopts.break_numbers = BREAK_MYRIADS;
+		tr->langopts.max_digits = 16;
+		SetLetterVowel(tr, 'q');
+		tr->langopts.accents = 2;
+		break;
+	}
 	case L('b', 'g'): // Bulgarian
 	{
 		SetCyrillicLetters(tr);

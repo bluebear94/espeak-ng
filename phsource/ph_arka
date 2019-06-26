@@ -1,0 +1,213 @@
+
+
+//=========================================================
+// Arka
+//=========================================================
+
+
+phoneme a
+  vwl starttype #a endtype #a
+  ipa a
+  IF nextPh(isNotVowel) AND nextPh(isVoiced) THEN
+    length 220
+  ELSE
+    length 160
+  ENDIF
+
+  FMT(vowel/a_2)
+endphoneme
+
+
+phoneme E
+  vwl starttype #e endtype #e
+  ipa ɛ
+  IF nextPh(isNotVowel) AND nextPh(isVoiced) THEN
+    length 220
+  ELSE
+    length 160
+  ENDIF
+
+  FMT(vowel/ee_1)
+endphoneme
+
+
+phoneme I
+  vwl starttype #i endtype #i
+  ipa ɪ
+  IF nextPh(isNotVowel) AND nextPh(isVoiced) THEN
+    length 220
+  ELSE
+    length 160
+  ENDIF
+  
+  IfNextVowelAppend(;)
+  FMT(vowel/ii_5)
+endphoneme
+
+
+phoneme O
+  vwl starttype #o endtype #o
+  ipa ɔ
+  IF nextPh(isNotVowel) AND nextPh(isVoiced) THEN
+    length 220
+  ELSE
+    length 160
+  ENDIF
+
+  FMT(vowel/o)
+endphoneme
+
+
+phoneme u
+  vwl starttype #u endtype #u
+  ipa ɯ
+  IF nextPh(isNotVowel) AND nextPh(isVoiced) THEN
+    length 220
+  ELSE
+    length 160
+  ENDIF
+
+  FMT(vowel/u_unr)
+endphoneme
+
+
+phoneme A:
+  vwl  starttype #a  endtype #a
+  length 280
+  FMT(vowel/aa_2)
+endphoneme
+
+
+phoneme e:
+  vwl starttype #e endtype #e
+  length 280
+  FMT(vowel/e)
+endphoneme
+
+
+phoneme i:
+  vwl starttype #i endtype #i
+  length 280
+  IfNextVowelAppend(;)
+  FMT(vowel/i)
+endphoneme
+
+
+phoneme o:
+  vwl starttype #o endtype #o
+  length 280
+  FMT(vowel/oo)
+endphoneme
+
+
+phoneme u:
+  vwl starttype #u endtype #u
+  length 280
+  FMT(vowel/u)
+endphoneme
+
+phoneme @
+  vwl   starttype #@  endtype #@
+  IF nextPh(isNotVowel) AND nextPh(isVoiced) THEN
+    length 210
+  ELSE
+    length 140
+  ENDIF
+  FMT(vowel/@)
+endphoneme
+
+phoneme @:
+  vwl   starttype #@  endtype #@
+  length 260
+  FMT(vowel/@)
+endphoneme
+
+phoneme r
+  liquid rhotic
+  ipa ɹ
+  lengthmod 7
+
+  NextVowelStarts
+    VowelStart(r/r@, -15)
+    VowelStart(r/ra, -15)
+    VowelStart(r/re, -15)
+    VowelStart(r/ri, -15)
+    VowelStart(r/ro, -15)
+    VowelStart(r/ru, -15)
+  EndSwitch
+
+  IF prevPh(isVowel) THEN
+    VowelEnding(r/xr, -50)
+  ENDIF
+
+  IF prevPh(isPause) THEN
+    FMT(r/_r)
+  ELIF prevPh(t) OR prevPh(p) OR prevPh(k) THEN
+    FMT(r/tr)
+  ENDIF
+
+  FMT(r/r)
+endphoneme
+
+phoneme ts
+  import_phoneme consonants/ts
+endphoneme
+
+phoneme t
+  IF thisPh(isWordStart) THEN
+    CALL base1/t
+  ELSE
+    CALL consonants/t-
+  ENDIF
+endphoneme
+
+phoneme k
+  IF thisPh(isWordStart) THEN
+    CALL base1/k
+  ELSE
+    CALL consonants/k-
+  ENDIF
+endphoneme
+
+phoneme p
+  IF thisPh(isWordStart) THEN
+    CALL base1/p
+  ELSE
+    CALL consonants/p-
+  ENDIF
+endphoneme
+
+phoneme l
+  liquid
+  lengthmod 7
+  IF nextPh(isNotVowel) THEN
+    ChangePhoneme(l/)
+  ENDIF
+
+  NextVowelStarts
+    VowelStart(l/l@)
+    VowelStart(l/la, -10)
+    VowelStart(l/le, -15)
+    VowelStart(l/li, -15)
+    VowelStart(l/lo, -20)
+    VowelStart(l/lu, -17)
+  EndSwitch
+  IF prevPh(#@) THEN
+    VowelEnding(l/xl, -50)
+  ELIF prevPh(isVowel) THEN
+    VowelEnding(l/xl, -40)
+  ENDIF
+
+  IF prevPh(isPause) THEN
+    FMT(l/_l)
+  ENDIF
+
+  IF prevPh(t) THEN
+    FMT(l/tl)
+  ENDIF
+
+  IF prevPh(l/) THEN
+    FMT(l/l_long)
+  ENDIF
+  FMT(l/l)
+endphoneme

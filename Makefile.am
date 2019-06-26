@@ -296,6 +296,7 @@ phsource/phonemes.stamp: \
 	phsource/ph_amhari \
 	phsource/ph_arabic \
 	phsource/ph_aragon \
+	phsource/ph_arka \
 	phsource/ph_armenian \
 	phsource/ph_assamese \
 	phsource/ph_azerbaijani \
@@ -457,6 +458,7 @@ dictionaries: \
 	espeak-ng-data/am_dict \
 	espeak-ng-data/an_dict \
 	espeak-ng-data/ar_dict \
+	espeak-ng-data/arka_dict \
 	espeak-ng-data/as_dict \
 	espeak-ng-data/az_dict \
 	espeak-ng-data/bg_dict \
@@ -557,6 +559,9 @@ espeak-ng-data/an_dict: dictsource/an_list dictsource/an_rules dictsource/an_ext
 
 ar: espeak-ng-data/ar_dict
 espeak-ng-data/ar_dict: dictsource/ar_list dictsource/ar_listx dictsource/ar_rules dictsource/ar_extra dictsource/ar_emoji
+
+arka: espeak-ng-data/arka_dict
+espeak-ng-data/arka_dict: dictsource/arka_list dictsource/arka_rules
 
 as: espeak-ng-data/as_dict
 espeak-ng-data/as_dict: dictsource/as_list dictsource/as_rules dictsource/as_extra
