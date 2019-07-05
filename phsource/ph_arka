@@ -108,6 +108,7 @@ endphoneme
 
 phoneme @
   vwl   starttype #@  endtype #@
+  unstressed
   IF nextPh(isNotVowel) AND nextPh(isVoiced) THEN
     length 210
   ELSE

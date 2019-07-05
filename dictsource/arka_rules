@@ -95,6 +95,7 @@
 
 .group r
   r r
+  _) r (C r@
 
 .group z
   z z
@@ -110,16 +111,17 @@
 .group l
   l l
   ll l:
+  _) l (C l@
 
 .group
   __) - (_D tIs
   . gaIn
   . (.       _:
   \.) . 
-        !          _:tEmpEra:
+        !          _:tEmpEra
         ! (\! 
         :          alOt
     D_) : (_DD_              // omit colon in time, eg: 2:30
-        !=         ko:t
+        !=         ENk
         >=         alnOd
         <=         alkalt
